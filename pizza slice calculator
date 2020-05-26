@@ -1,0 +1,14 @@
+people=int(input('Enter the number of people'))    
+pizzas=int(input('Enter the number of pizzas ordered'))
+size=input('Enter size: Small (4slices), Medium (8slices) Large (12slices)').lower()
+if size == 'Small' or size == 'small':
+    each= (4 *pizzas)//people
+    #elif statments to used as control structure to determine which equation used based on user input
+elif size == 'Medium' or size == 'medium':
+    each= (8 *pizzas)//people
+elif size == 'Large' or size == 'large':
+    each= (12 *pizzas)//people
+#else statment used if they dont input
+else:
+    size=input('Enter size: Small (4slices), Medium (8slices) Large (12slices)').lower()
+print('Each person gets',format(each),'slices')
